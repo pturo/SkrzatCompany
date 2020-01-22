@@ -1,0 +1,34 @@
+{% extends "layout.html"%}
+{% block body%}
+<title>SkrzatCompany - Strona główna</title>
+<h1>Witamy w panelu administracyjnym</h1>
+<p>Aktualna lista użytkowników ze wszystkich oddziałów:</p>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nazwa użytkownika</th>
+            <th>Hasło</th>
+            <th>Oddział</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for user in users %}
+        <tr>
+            <th>{{ user.id }}</th>
+            <th>{{ user.username }}</th>
+            <th>{{ user.password }}</th>
+            <th>{{ user.oddzial }}</th>
+            <th><form action="{{ url_for('delete', id=user.id, oddzial=user.oddzial) }}" method="POST">
+                <input type="hidden" name="{{ user.id, user.oddzial }}" value="DELETE">
+                <input type="submit" value="Usuń" onclick="return_confirm('Czy jesteś pewien, że chcesz usunąć użytkownika {{ user.username }}?')" class="btn btn-danger">
+            </form></th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p>Możesz dodać lub usunąć użytkownika z bazy, wybierając jedną z opcji poniżej.</p>
+<ul>
+    <li><a href="/add">Dodaj użytkownika</a></li>
+</ul>
+{% endblock %}

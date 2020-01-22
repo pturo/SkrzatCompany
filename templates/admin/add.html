@@ -1,0 +1,21 @@
+{% extends "layout.html"%}
+{% block body%}
+<h1>Dodaj użytkownika</h1>
+<div class="container">
+    <form action="" method="POST">
+        <div class="form-group">
+            <input type="text" name="username" class="form-control" placeholder="Nazwa użytkownika" required>
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Hasło" required>
+        </div>
+        <div class="form-group">
+                <input type="password" name="confirmpassword" class="form-control" placeholder="Potwierdź hasło" required>
+            </div>
+        <div class="form-group">
+                <input type="text" name="oddzial" class="form-control" placeholder="Oddział" required>
+            </div>
+        <button class="btn btn-primary" type="submit">Dodaj</button>
+    </form>
+</div>
+{% endblock %}
