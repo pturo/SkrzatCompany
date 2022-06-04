@@ -1,13 +1,11 @@
-# SkrzatCompany
-Python + Flask microframework excersise project
+# Skrzat Company
 
-# Table of Contents
-* [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
+## What's new?
 
-## General info
-SkrzatCompany is a practice project where we have a site with users verification and magement by admin who can add or delete users to the specific organizations (like Earth(Ziemia) ogranization or Moon(Księżyc) organization). The whole project is written in Python with Flask microframerowk and basic SQL queries with database in XAMPP's server package. Content of SkrzatCompany is written in Polish language.
+There is no new features.
+
+## About project
+Skrzat Company is a project where we have a site with users verification and magement by admin who can add or delete users to the specific organizations (like Earth(Ziemia) ogranization or Moon(Księżyc) organization). The whole project is written in Python with Flask microframerowk and basic SQL queries with database in XAMPP's server package. Content of SkrzatCompany is written in Polish language.
 
 After installing XAMPP and adding project to a valid directory, you can launch it by typing in your browser http://localhost:[port number]/index.html. You should see main page.
 
@@ -33,11 +31,18 @@ If you would like to delete user from database, click "Usuń" (Delete) red butto
 
 As you can see, everyting works propely.
 
-## Technologies
+## Technologies used in the project
 Project was made with:
 * Python 3.7
 * Flask
 * Bootstrap 4.3.1 (to improve appearance)
 
-## Setup
-To run this project make sure you have installed XAMPP and you have configured your admin account on phpMyAdmin. It would be better, if you prepared simple database (which is included into the project). If so, you can run your project by typing "run appname.py" command and everything should work. If not, have a look at this site: https://flask.palletsprojects.com/en/1.1.x/quickstart/
+## Goals
+
+Main goal is to learn about Flask microframework and XAMPP management.
+
+## License
+
+My project is under BSD-2-Clause license. You can use some parts from my code but remember to credit me as an appreciation to my work! Thanks! Awoo!
+
+© 2022 Paweł "Wilczeq/Vlk" Turoń
